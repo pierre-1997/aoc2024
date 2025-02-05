@@ -5,3 +5,4 @@ members = ["day-*"]
 default-members = ["day-*"]
 
 [workspace.dependencies]
+criterion = "0.5"
