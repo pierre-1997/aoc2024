@@ -5,19 +5,7 @@ fn check_validity(serie: &[i32]) -> bool {
     }
 }
 
-pub fn part_1(input: &str) -> usize {
-    input
-        .lines()
-        .map(|line| {
-            line.split_whitespace()
-                .map(|v| v.parse::<i32>().unwrap())
-                .collect::<Vec<i32>>()
-        })
-        .filter(|serie| check_validity(serie))
-        .count()
-}
-
-pub fn part_2(input: &str) -> usize {
+pub fn process(input: &str) -> usize {
     let mut out = 0;
 
     for serie in input.lines().map(|line| {
@@ -47,7 +35,7 @@ pub fn part_2(input: &str) -> usize {
 }
 
 #[test]
-fn test_day_2() {
+fn test_day_02_part_2() {
     let input = r"7 6 4 2 1
 1 2 7 8 9
 9 7 6 2 1
@@ -55,6 +43,5 @@ fn test_day_2() {
 8 6 4 4 1
 1 3 6 7 9";
 
-    assert_eq!(part_1(input), 2);
-    assert_eq!(part_2(input), 4);
+    assert_eq!(process(input), 4);
 }
