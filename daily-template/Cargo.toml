@@ -9,6 +9,6 @@ edition = "2021"
 criterion.workspace = true
 
 [[bench]]
-name = "day-XX-benchmarks"
+name = "{{project-name}}-benchmarks"
 path = "benches/benchmarks.rs"
 harness = false
