@@ -3,7 +3,7 @@ pub fn process(input: &str) -> usize {
 }
 
 #[test]
-fn test_day_XX_part_1() {
+fn test_{{crate_name}}_part_1() {
     let test_input = r"";
 
     assert_eq!(process(test_input), 0);
