@@ -6,7 +6,7 @@ pub fn process(input: &str) -> usize {
     let line_len = input.lines().next().unwrap().len();
     let nb_lines = input.lines().count();
 
-    let input: Vec<char> = input.lines().map(|line| line.chars()).flatten().collect();
+    let input: Vec<char> = input.lines().flat_map(|line| line.chars()).collect();
     let mut out = 0;
 
     // Horizontal
