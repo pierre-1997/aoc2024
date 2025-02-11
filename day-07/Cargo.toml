@@ -1,0 +1,14 @@
+[package]
+name = "day-07"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+criterion.workspace = true
+
+[[bench]]
+name = "day-07-benchmarks"
+path = "benches/benchmarks.rs"
+harness = false
